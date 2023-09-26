@@ -12,10 +12,10 @@ export default defineEventHandler(async (event) => {
 			Authorization: `Bearer ${config.OPENAI_API_KEY}`
 		},
 		body: JSON.stringify({
-			model: 'text-davinci-003',
+			model: 'gpt-4',
 			prompt: prompt,
 			temperature: 0.9,
-			max_tokens: 512,
+			max_tokens: 8112,
 			top_p: 1.0,
 			frequency_penalty: 0,
 			presence_penalty: 0.6,
