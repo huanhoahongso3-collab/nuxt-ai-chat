@@ -5,11 +5,11 @@ export default defineEventHandler(async (event) => {
 	messages = messages.concat(previosMessages);
 	let prompt =
 		messages.map((message) => `${message.role}: ${message.message}`).join('\n') + `\nAI:`;
-	const req = await fetch('https://api.openai.com/v1/completions', {
+	const req = await fetch('https://api.nova-oss.com/v1', {
 		method: 'POST',
 		headers: {
 			'Content-Type': 'application/json',
-			Authorization: `Bearer ${config.OPENAI_API_KEY}`
+			Authorization: `Bearer ${config.nv-30bVqUG136OK8PmNbXrkN0V4x0SSacDnnBprfvIe1rO2gh6l}`
 		},
 		body: JSON.stringify({
 			model: 'gpt-4',
