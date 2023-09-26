@@ -15,7 +15,7 @@ export default defineEventHandler(async (event) => {
 			model: 'gpt-4',
 			prompt: prompt,
 			temperature: 0.9,
-			max_tokens: 8112,
+			max_tokens: 512,
 			top_p: 1.0,
 			frequency_penalty: 0,
 			presence_penalty: 0.6,
